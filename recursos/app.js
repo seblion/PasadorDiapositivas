@@ -1,5 +1,4 @@
 var slideNumber = 1;
-// -----------que sea dinamico!!!! identificacion de cant diapos -----------
 const totalSlideNumber = $('#num_slides').val();
 
 document.addEventListener("DOMContentLoaded", function () {
