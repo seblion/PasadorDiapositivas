@@ -1,6 +1,6 @@
 var slideNumber = 1;
 // -----------que sea dinamico!!!! identificacion de cant diapos -----------
-const totalSlideNumber = 8; //
+const totalSlideNumber = $('#num_slides').val();
 
 document.addEventListener("DOMContentLoaded", function () {
     mostrarSlide(slideNumber);
@@ -31,6 +31,11 @@ $(document).ready(function () {
         } else {
             lista.setAttribute('class', 'active');
         }
+    });
+
+    $('#lista ul li').click(function () {
+        slideNumber = $(this).index() + 1;
+        mostrarSlide(slideNumber);
     });
 });
 
