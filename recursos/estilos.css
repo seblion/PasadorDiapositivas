@@ -86,3 +86,8 @@
 #lista ul li:hover {
   cursor: pointer;
 }
+
+.boton-personalizado:disabled { /* Estilo para botón deshabilitado */
+  opacity: 0.5;
+  cursor: not-allowed;
+}
