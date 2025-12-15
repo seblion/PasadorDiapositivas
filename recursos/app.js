@@ -31,9 +31,12 @@ $(document).ready(function () {
 
     // Selección de diapositiva desde el menú lateral
     $('#lista ul li').click(function () {
-        slideNumber = $(this).index() + 1;
-        mostrarSlide();
+        if($("#lista").hasClass("active")){
+             slideNumber = $(this).index() + 1;
+            mostrarSlide();
+        }   
     });
+    
 });
 
 

@@ -83,7 +83,7 @@
   background-color: #5C5A58;
 }
 
-#lista ul li:hover {
+#lista.active ul li:hover {
   cursor: pointer;
 }
 
