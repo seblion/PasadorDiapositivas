@@ -39,7 +39,7 @@ $(document).ready(function () {
 
 function mostrarSlide() {
     $("#slideActual").text(slideNumber);
-    $("#container img").attr("src", "/recursos/Diapositiva" + slideNumber + ".jpeg");
+    $("#container img").attr("src", "recursos/Diapositiva" + slideNumber + ".jpeg");
     manejarUsoDeLosBotones(); // Cada vez que se cambia de diapositiva, se actualizan los botones
 }
 
